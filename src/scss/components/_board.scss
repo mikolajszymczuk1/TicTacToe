@@ -1,0 +1,56 @@
+/* Styles for board */
+.game {
+    @include flexbox($direction: column);
+
+    margin-top: 50px;
+
+    height: 100vh;
+    min-height: 475px;
+}
+
+.game__board {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 90px);
+}
+
+.game__board-cell {
+    @include flexbox();
+    @include size(100%);
+
+    background-color: transparent;
+    border: solid 4px $color-e;
+}
+
+.game__board-cell:nth-child(1),
+.game__board-cell:nth-child(2),
+.game__board-cell:nth-child(3) {
+    border-top: none;
+}
+
+.game__board-cell:nth-child(7),
+.game__board-cell:nth-child(8),
+.game__board-cell:nth-child(9) {
+    border-bottom: none;
+}
+
+.game__board-cell:nth-child(1),
+.game__board-cell:nth-child(4),
+.game__board-cell:nth-child(7) {
+    border-left: none;
+}
+
+.game__board-cell:nth-child(3),
+.game__board-cell:nth-child(6),
+.game__board-cell:nth-child(9) {
+    border-right: none;
+}
+
+/* Styles for game messages */
+.game__messages {
+    margin-top: 30px;
+
+    font-family: 'Fredoka One', cursive;
+    font-size: 2em;
+    color: $color-e;
+}

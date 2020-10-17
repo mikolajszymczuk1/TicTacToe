@@ -1,0 +1,9 @@
+/* Styles for circle */
+.game__circle {
+    @include size(70%);
+
+    background-color: transparent;
+    border: solid 10px $color-d;
+    border-radius: 50%;
+    animation: showMe 250ms ease-out forwards;
+}

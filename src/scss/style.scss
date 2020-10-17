@@ -1,9 +1,17 @@
-// Assets
+/* Assets */
 @import "helpers/fonts";
+@import "helpers/reset";
 @import "helpers/colors";
+@import "helpers/animations";
 
-// App
+/* Mixins */
+@import "mixins/display-mixin";
+@import "mixins/size-mixin";
+
+/* App */
 @import "components/header";
 @import "components/circle";
 @import "components/cross";
 @import "components/board";
+@import "components/options";
+@import "components/footer";

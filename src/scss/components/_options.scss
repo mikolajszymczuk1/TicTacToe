@@ -1,0 +1,29 @@
+/* Styles for options buttons */
+.options { 
+    margin: 50px 0;
+
+    text-align: center;
+}
+
+.options__button {
+    @include size(60px);
+
+    margin: 0 5px;
+
+    background-color: $color-d;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(black, 0.1);
+}
+
+.options__button--change-color {
+    background-color: $color-c;
+}
+
+.options__icon {
+    color: $color-f;
+}
+
+.options__icon--change-color {
+    color: $color-a;
+}

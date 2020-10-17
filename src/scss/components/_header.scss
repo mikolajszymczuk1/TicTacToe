@@ -1,0 +1,20 @@
+/* Styles for header */
+.game-header {
+    @include flexbox();
+
+    padding: 20px;
+}
+
+.game-header__text {
+    margin-right: 15px;
+
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    color: $color-e;
+}
+
+.game-header__logo {
+    width: 50px;
+    height: auto;
+}
