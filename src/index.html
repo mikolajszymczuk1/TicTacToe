@@ -12,7 +12,36 @@
 </head>
 
 <body>
-    <h1>TicTacToe here !!! <i class="fas fa-smile-wink"></i></h1>
+    <!-- Header with logo -->
+    <header class="game-header">
+        <h1 class="game-header__text">TicTacToe</h1>
+        <img class="game-header__logo" src="svg/Logo.svg" alt="TicTacToe logo" title="Game logo" />
+    </header>
+
+    <!-- Main container for board and game elements -->
+    <main class="game">
+        <!-- Game board (3x3 grid) -->
+        <div class="game__board">
+            <div class="game__board-cell" data-cell-number="1"></div>
+            <div class="game__board-cell" data-cell-number="2"></div>
+            <div class="game__board-cell" data-cell-number="3"></div>
+            <div class="game__board-cell" data-cell-number="4"></div>
+            <div class="game__board-cell" data-cell-number="5"></div>
+            <div class="game__board-cell" data-cell-number="6"></div>
+            <div class="game__board-cell" data-cell-number="7"></div>
+            <div class="game__board-cell" data-cell-number="8"></div>
+            <div class="game__board-cell" data-cell-number="9"></div>
+        </div>
+
+        <!-- Game messages -->
+        <div class="game__messages"></div>
+    </main>
+
+    <!-- User's option (change theme and play again) -->
+    <footer class="options">
+        <button class="options__button" name="theme-button" aria-label="theme-change-button"><i class="fas fa-sun"></i></button>
+        <button class="options__button" name="clear-button" aria-label="play-again-button"><i class="fas fa-redo-alt"></i></button>
+    </footer>
 
     <!-- JS -->
     <script src="js/app.js"></script>
