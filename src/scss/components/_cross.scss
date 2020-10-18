@@ -3,11 +3,12 @@
     @include flexbox();
     position: relative;
 
-    @include size(80%);
+    @include size(70%);
 
     background-color: transparent;
     transform: scale(0);
     animation: showMe 250ms ease-out forwards;
+    pointer-events: none;
 }
 
 .game__cross::before,

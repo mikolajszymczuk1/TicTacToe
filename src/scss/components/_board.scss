@@ -22,6 +22,10 @@
     border: solid 4px $color-e;
 }
 
+.game__board-cell:hover {
+    cursor: pointer;
+}
+
 .game__board-cell:nth-child(1),
 .game__board-cell:nth-child(2),
 .game__board-cell:nth-child(3) {

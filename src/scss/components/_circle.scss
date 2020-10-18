@@ -6,4 +6,5 @@
     border: solid 10px $color-d;
     border-radius: 50%;
     animation: showMe 250ms ease-out forwards;
+    pointer-events: none;
 }

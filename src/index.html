@@ -21,30 +21,31 @@
     <!-- Main container for board and game elements -->
     <main class="game">
         <!-- Game board (3x3 grid) -->
-        <div class="game__board">
-            <div class="game__board-cell" data-cell-number="1"></div>
-            <div class="game__board-cell" data-cell-number="2"><div class="game__cross"></div></div>
-            <div class="game__board-cell" data-cell-number="3"><div class="game__circle"></div></div>
-            <div class="game__board-cell" data-cell-number="4"><div class="game__cross"></div></div>
-            <div class="game__board-cell" data-cell-number="5"><div class="game__circle"></div></div>
-            <div class="game__board-cell" data-cell-number="6"></div>
-            <div class="game__board-cell" data-cell-number="7"><div class="game__circle"></div></div>
-            <div class="game__board-cell" data-cell-number="8"><div class="game__cross"></div></div>
-            <div class="game__board-cell" data-cell-number="9"></div>
-        </div>
+        <section class="game__board">
+            <div class="game__board-cell" data-cell></div>
+            <div class="game__board-cell" data-cell></div>
+            <div class="game__board-cell" data-cell></div>
+            <div class="game__board-cell" data-cell></div>
+            <div class="game__board-cell" data-cell></div>
+            <div class="game__board-cell" data-cell></div>
+            <div class="game__board-cell" data-cell></div>
+            <div class="game__board-cell" data-cell></div>
+            <div class="game__board-cell" data-cell></div>
+        </section>
 
         <!-- Game messages -->
-        <section class="game__messages">Circle win !!!</section>
+        <section class="game__messages">O vs X</section>
 
         <!-- User's option (change theme and play again) -->
         <section class="options">
-            <button class="options__button" name="theme-button" aria-label="theme-change-button"><i
+            <button class="options__button theme-b" name="theme-button" aria-label="theme-change-button"><i
                     class="options__icon fas fa-sun fa-3x"></i></button>
-            <button class="options__button options__button--change-color" name="clear-button" aria-label="play-again-button"><i
+            <button class="options__button options__button--change-color clear-b" name="clear-button" aria-label="play-again-button"><i
                     class="options__icon options__icon--change-color fas fa-redo-alt fa-3x"></i></button>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer class="info">Made by Szymanek Games Studio</footer>
 
     <!-- JS -->
