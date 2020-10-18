@@ -4,7 +4,7 @@ function createCircleCross(t, p) {
 
     if (t === "O") {
         div.classList.add("game__circle");
-    } else if (t === "X") {
+    } else {
         div.classList.add("game__cross");
     }
 
@@ -26,12 +26,15 @@ function somebodyWin(winMoves, cells, player) {
 // Pick a player who will be first
 function whoFirst() {
     const num = Math.floor(Math.random() * 2);
+    let firstPlayer;
 
     if (num === 0) {
-        return "O";
+        firstPlayer = "O";
+    } else {
+        firstPlayer = "X";
     }
 
-    return "X";
+    return firstPlayer;
 }
 
 // Change to next player
