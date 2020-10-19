@@ -1,4 +1,3 @@
-import { TestScheduler } from "jest";
 import { nextPlayer } from "../src/js/functions";
 
 describe("nextPlayer function", () => {

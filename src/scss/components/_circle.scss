@@ -8,3 +8,9 @@
     animation: showMe 250ms ease-out forwards;
     pointer-events: none;
 }
+
+@media screen and (min-width: 768px) {
+    .game__circle {
+        border-width: 15px;
+    }
+}

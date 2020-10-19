@@ -21,6 +21,13 @@
     border-radius: 25px;
 }
 
+@media screen and (min-width: 768px) {
+    .game__cross::before,
+    .game__cross::after {
+        @include size(100%, 20px);
+    }
+}
+
 .game__cross::before {
     content: "";
     transform: rotate(45deg);

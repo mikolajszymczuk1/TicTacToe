@@ -8,10 +8,40 @@
     min-height: 475px;
 }
 
+@media screen and (min-width: 425px) {
+    .game {
+        min-height: 625px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .game {
+        @include flexbox($justify: flex-start, $direction: column);
+
+        margin-top: 100px;
+
+        min-height: 700px;
+    }
+}
+
 .game__board {
     display: grid;
     grid-template-columns: repeat(3, 90px);
     grid-template-rows: repeat(3, 90px);
+}
+
+@media screen and (min-width: 425px) {
+    .game__board {
+        grid-template-columns: repeat(3, 120px);
+        grid-template-rows: repeat(3, 120px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .game__board {
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(3, 150px);
+    }
 }
 
 .game__board-cell {
@@ -20,6 +50,18 @@
 
     background-color: transparent;
     border: solid 4px $color-e;
+}
+
+@media screen and (min-width: 425px) {
+    .game__board-cell {
+        border-width: 5px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .game__board-cell {
+        border-width: 6px;
+    }
 }
 
 .game__board-cell:hover {
@@ -57,4 +99,12 @@
     font-family: 'Fredoka One', cursive;
     font-size: 2em;
     color: $color-e;
+}
+
+@media screen and (min-width: 425px) {
+    .game__messages {
+        margin-top: 40px;
+
+        font-size: 2.2em;
+    }
 }
