@@ -2,7 +2,7 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import { createCircleCross, whoFirst, nextPlayer, clearBoard, somebodyWin, changeColorMode, isColorModeSet } from "./functions";
 
 // Set color mode
-!isColorModeSet ? changeColorMode("light-mode") : changeColorMode(localStorage.getItem("color-mode"));
+isColorModeSet() ? changeColorMode(localStorage.getItem("color-mode")) : changeColorMode("light-mode");
 
 // Get game elements
 const board = document.querySelector(".game__board");
