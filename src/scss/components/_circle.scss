@@ -8,6 +8,7 @@
     border-radius: 50%;
     animation: showMe 250ms ease-out forwards;
     pointer-events: none;
+    transition: border-color 200ms ease-out;
 }
 
 @media screen and (min-width: 425px) {

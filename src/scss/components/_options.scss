@@ -16,7 +16,8 @@
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(black, 0.1);
     outline: none;
-    transition: transform 100ms ease-out;
+    transition: transform 100ms ease-out,
+                background-color 200ms ease-out;
 }
 
 @media screen and (min-width: 425px) {
@@ -41,7 +42,8 @@
 }
 
 .options__icon {
-    transition: transform 250ms ease-out;
+    transition: transform 250ms ease-out,
+                color 200ms ease-out;
 
     color: $color-light-b;
     color: var(--color-b);

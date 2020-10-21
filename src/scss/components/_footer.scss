@@ -4,6 +4,8 @@
 
     background-color: $color-light-d;
     background-color: var(--color-d);
+    transition: background-color 200ms ease-out,
+                color 200ms ease-out;
 
     font-family: 'Fredoka One', cursive;
     font-size: 0.8em;

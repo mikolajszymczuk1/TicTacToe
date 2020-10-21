@@ -14,6 +14,8 @@
 .game-header__text {
     margin-right: 15px;
 
+    transition: color 200ms ease-out;
+
     font-family: 'Fredoka One', cursive;
     font-size: 1.8em;
     letter-spacing: 2px;
@@ -28,6 +30,8 @@
 }
 
 .game-header__first-letter {
+    transition: color 200ms ease-out;
+
     color: $color-light-a;
     color: var(--color-a);
 }
@@ -46,4 +50,5 @@
 .game-header__logo-element {
     fill: $color-light-e;
     fill: var(--color-e);
+    transition: fill 200ms ease-out;
 }
