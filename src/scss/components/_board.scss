@@ -49,7 +49,9 @@
     @include size(100%);
 
     background-color: transparent;
-    border: solid 4px $color-e;
+    border: solid 4px $color-light-e;
+    border-color: var(--color-e);
+    transition: border-color 200ms ease-out;
 }
 
 @media screen and (min-width: 425px) {
@@ -96,9 +98,12 @@
 .game__messages {
     margin-top: 30px;
 
+    transition: color 200ms ease-out;
+
     font-family: 'Fredoka One', cursive;
     font-size: 2em;
-    color: $color-e;
+    color: $color-light-e;
+    color: var(--color-e);
 }
 
 @media screen and (min-width: 425px) {

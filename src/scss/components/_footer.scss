@@ -2,12 +2,16 @@
 .info {
     padding: 40px;
 
-    background-color: $color-d;
+    background-color: $color-light-d;
+    background-color: var(--color-d);
+    transition: background-color 200ms ease-out,
+                color 200ms ease-out;
 
     font-family: 'Fredoka One', cursive;
     font-size: 0.8em;
     letter-spacing: 1px;
-    color: $color-f;
+    color: $color-light-b;
+    color: var(--color-b);
     text-align: center;
 }
 

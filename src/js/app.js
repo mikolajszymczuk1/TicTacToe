@@ -1,5 +1,8 @@
 import "@fortawesome/fontawesome-free/css/all.css";
-import { createCircleCross, whoFirst, nextPlayer, clearBoard, somebodyWin } from "./functions";
+import { createCircleCross, whoFirst, nextPlayer, clearBoard, somebodyWin, changeColorMode, isColorModeSet } from "./functions";
+
+// Set color mode
+!isColorModeSet ? changeColorMode("light-mode") : changeColorMode(localStorage.getItem("color-mode"));
 
 // Get game elements
 const board = document.querySelector(".game__board");
@@ -24,11 +27,24 @@ let player = whoFirst();
 let canMove = true;
 
 // Interactions
-board.addEventListener("click", (e) => { gameController(e); });
+board.addEventListener("click", (e) => {
+    gameController(e);
+});
+
 clear_button.addEventListener("click", () => { 
     clearBoard(cells);
     message.innerText = "O vs X";
     canMove = true;
+});
+
+theme_button.addEventListener("click", () => {
+    let currentColorMode = localStorage.getItem("color-mode");
+
+    if (currentColorMode === "light-mode") {
+        changeColorMode("dark-mode");
+    } else {
+        changeColorMode("light-mode")
+    }
 });
 
 // Main game controller

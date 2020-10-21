@@ -5,3 +5,9 @@
 
     box-sizing: border-box;
 }
+
+body {
+    background-color: $color-light-b;
+    background-color: var(--color-b);
+    transition: background-color 200ms ease-out;
+}

@@ -14,10 +14,13 @@
 .game-header__text {
     margin-right: 15px;
 
+    transition: color 200ms ease-out;
+
     font-family: 'Fredoka One', cursive;
     font-size: 1.8em;
     letter-spacing: 2px;
-    color: $color-e;
+    color: $color-light-e;
+    color: var(--color-e);
 }
 
 @media screen and (min-width: 425px) {
@@ -27,7 +30,10 @@
 }
 
 .game-header__first-letter {
-    color: $color-a;
+    transition: color 200ms ease-out;
+
+    color: $color-light-a;
+    color: var(--color-a);
 }
 
 .game-header__logo {
@@ -39,4 +45,10 @@
     .game-header__logo {
         width: 60px;
     }
+}
+
+.game-header__logo-element {
+    fill: $color-light-e;
+    fill: var(--color-e);
+    transition: fill 200ms ease-out;
 }

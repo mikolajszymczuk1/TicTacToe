@@ -10,12 +10,14 @@
 
     margin: 0 5px;
 
-    background-color: $color-d;
+    background-color: $color-light-d;
+    background-color: var(--color-d);
     border: none;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(black, 0.1);
     outline: none;
-    transition: transform 100ms ease-out;
+    transition: transform 100ms ease-out,
+                background-color 200ms ease-out;
 }
 
 @media screen and (min-width: 425px) {
@@ -35,13 +37,16 @@
 }
 
 .options__button--change-color {
-    background-color: $color-c;
+    background-color: $color-light-c;
+    background-color: var(--color-c);
 }
 
 .options__icon {
-    transition: transform 250ms ease-out;
+    transition: transform 250ms ease-out,
+                color 200ms ease-out;
 
-    color: $color-f;
+    color: $color-light-b;
+    color: var(--color-b);
 }
 
 .options__button:hover .options__icon {
@@ -55,5 +60,6 @@
 }
 
 .options__icon--change-color {
-    color: $color-a;
+    color: $color-light-a;
+    color: var(--color-a);
 }

@@ -54,4 +54,15 @@ function clearBoard(cells) {
     }
 }
 
-export { createCircleCross, whoFirst, nextPlayer, clearBoard, somebodyWin};
+// Color mode functions
+function changeColorMode(mode) {
+    document.documentElement.classList = mode;
+    localStorage.setItem("color-mode", mode);
+}
+
+function isColorModeSet() {
+    return localStorage.getItem("color-mode") ? true : false;
+}
+
+
+export { createCircleCross, whoFirst, nextPlayer, clearBoard, somebodyWin, changeColorMode, isColorModeSet};
