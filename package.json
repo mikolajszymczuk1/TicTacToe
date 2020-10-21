@@ -2,7 +2,7 @@
   "name": "tictactoe",
   "version": "1.0.0",
   "description": "TicTacToe Game",
-  "main": "app.js",
+  "main": "src/index.html",
   "scripts": {
     "test": "jest",
     "start": "parcel src/index.html",

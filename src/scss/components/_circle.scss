@@ -1,6 +1,6 @@
 /* Styles for circle */
 .game__circle {
-    @include size(70%);
+    @include size(55px);
 
     background-color: transparent;
     border: solid 10px $color-d;
@@ -9,8 +9,16 @@
     pointer-events: none;
 }
 
+@media screen and (min-width: 425px) {
+    .game__circle {
+        @include size(70px);
+    }
+}
+
 @media screen and (min-width: 768px) {
     .game__circle {
+        @include size(85px);
+
         border-width: 15px;
     }
 }
