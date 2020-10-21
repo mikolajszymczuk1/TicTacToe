@@ -15,6 +15,7 @@
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(black, 0.1);
     outline: none;
+    transition: transform 100ms ease-out;
 }
 
 @media screen and (min-width: 425px) {
@@ -29,12 +30,28 @@
     cursor: pointer;
 }
 
+.options__button:active {
+    transform: scale(0.9);
+}
+
 .options__button--change-color {
     background-color: $color-c;
 }
 
 .options__icon {
+    transition: transform 250ms ease-out;
+
     color: $color-f;
+}
+
+.options__button:hover .options__icon {
+    animation: rotate 0.5s ease-out forwards;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .options__icon--change-color {
