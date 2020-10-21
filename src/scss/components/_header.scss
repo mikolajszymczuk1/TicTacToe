@@ -37,14 +37,8 @@
 }
 
 .game-header__logo {
-    width: 50px;
+    width: auto;
     height: auto;
-}
-
-@media screen and (min-width: 425px) {
-    .game-header__logo {
-        width: 60px;
-    }
 }
 
 .game-header__logo-element {
