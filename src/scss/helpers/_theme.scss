@@ -1,0 +1,16 @@
+/* Styles for color modes */
+.light-mode {
+    --color-a: #FF6B35;
+    --color-b: #FFFFFF;
+    --color-c: #F7C59F;
+    --color-d: #1A659E;
+    --color-e: #004E89;
+}
+
+.dark-mode {
+    --color-c: #f4f1de;
+    --color-a: #e07a5f;
+    --color-b: #3d405b;
+    --color-d: #81b29a;
+    --color-e: #f2cc8f;
+}
